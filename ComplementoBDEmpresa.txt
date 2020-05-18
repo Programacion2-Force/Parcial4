@@ -9,9 +9,36 @@ CREATE TABLE USUARIOS(
 
 GO
 
-[precio_unitario], [detalles]) VALUES (@nombre_producto, @id_categoria, @precio_unitario, @detalles);
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_MostrarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_MostrarProductos
+AS
+	SET NOCOUNT ON;
+SELECT Produccion.Productos.*, id_producto AS Expr1, nombre_producto AS Expr2, id_categoria AS Expr3, precio_unitario AS Expr4, detalles AS Expr5, codigo AS Expr6 FROM Produccion.Productos
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_InsertarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_InsertarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_InsertarProductos
+(
+	@nombre_producto varchar(50),
+	@id_categoria int,
+	@precio_unitario money,
+	@detalles varchar(150),
+	@Expr2 varchar(50),
+	@Expr3 int,
+	@Expr4 money,
+	@Expr5 varchar(150)
+)
+AS
+	SET NOCOUNT OFF;
+INSERT INTO [Produccion].[Productos] ([nombre_producto], [id_categoria], [precio_unitario], [detalles], [nombre_producto], [id_categoria], [precio_unitario], [detalles]) VALUES (@nombre_producto, @id_categoria, @precio_unitario, @detalles, @Expr2, @Expr3, @Expr4, @Expr5);
 	
-SELECT id_producto, nombre_producto, id_categoria, precio_unitario, detalles, codigo FROM Produccion.Productos WHERE (id_producto = SCOPE_IDENTITY())
+SELECT id_producto, nombre_producto, id_categoria, precio_unitario, detalles, codigo, id_producto AS Expr1, nombre_producto AS Expr2, id_categoria AS Expr3, precio_unitario AS Expr4, detalles AS Expr5, codigo AS Expr6 FROM Produccion.Productos WHERE (id_producto = SCOPE_IDENTITY()) AND (id_producto = SCOPE_IDENTITY())
 GO
 
 IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_ActualizarProductos' AND user_name(uid) = 'dbo')
@@ -24,14 +51,19 @@ CREATE PROCEDURE [dbo].STP_ActualizarProductos
 	@id_categoria int,
 	@precio_unitario money,
 	@detalles varchar(150),
+	@Expr2 varchar(50),
+	@Expr3 int,
+	@Expr4 money,
+	@Expr5 varchar(150),
 	@Original_id_producto int,
+	@Original_Expr1 int,
 	@id_producto int
 )
 AS
 	SET NOCOUNT OFF;
-UPDATE [Produccion].[Productos] SET [nombre_producto] = @nombre_producto, [id_categoria] = @id_categoria, [precio_unitario] = @precio_unitario, [detalles] = @detalles WHERE (([id_producto] = @Original_id_producto));
+UPDATE [Produccion].[Productos] SET [nombre_producto] = @nombre_producto, [id_categoria] = @id_categoria, [precio_unitario] = @precio_unitario, [detalles] = @detalles, [nombre_producto] = @Expr2, [id_categoria] = @Expr3, [precio_unitario] = @Expr4, [detalles] = @Expr5 WHERE (([id_producto] = @Original_id_producto) AND ([id_producto] = @Original_Expr1));
 	
-SELECT id_producto, nombre_producto, id_categoria, precio_unitario, detalles, codigo FROM Produccion.Productos WHERE (id_producto = @id_producto)
+SELECT id_producto, nombre_producto, id_categoria, precio_unitario, detalles, codigo, id_producto AS Expr1, nombre_producto AS Expr2, id_categoria AS Expr3, precio_unitario AS Expr4, detalles AS Expr5, codigo AS Expr6 FROM Produccion.Productos WHERE (id_producto = @id_producto) AND (id_producto = @id_producto)
 GO
 
 IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_EliminarProductos' AND user_name(uid) = 'dbo')
@@ -40,13 +72,13 @@ GO
 
 CREATE PROCEDURE [dbo].STP_EliminarProductos
 (
-	@Original_id_producto int
+	@Original_id_producto int,
+	@Original_Expr1 int
 )
 AS
 	SET NOCOUNT OFF;
-DELETE FROM [Produccion].[Productos] WHERE (([id_producto] = @Original_id_producto))
+DELETE FROM [Produccion].[Productos] WHERE (([id_producto] = @Original_id_producto) AND ([id_producto] = @Original_Expr1))
 GO
-
 --
 
 IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarProductosID' AND user_name(uid) = 'dbo')
