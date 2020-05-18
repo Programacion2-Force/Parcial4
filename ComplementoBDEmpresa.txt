@@ -1,0 +1,68 @@
+CREATE TABLE USUARIOS(
+	ID int identity(1,1) primary key,
+	nombre nvarchar(50),
+	apellido nvarchar(50),
+	username nvarchar(50),
+	pass nvarchar(50),
+	email nvarchar(50)
+);
+
+GO
+
+[precio_unitario], [detalles]) VALUES (@nombre_producto, @id_categoria, @precio_unitario, @detalles);
+	
+SELECT id_producto, nombre_producto, id_categoria, precio_unitario, detalles, codigo FROM Produccion.Productos WHERE (id_producto = SCOPE_IDENTITY())
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_ActualizarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_ActualizarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_ActualizarProductos
+(
+	@nombre_producto varchar(50),
+	@id_categoria int,
+	@precio_unitario money,
+	@detalles varchar(150),
+	@Original_id_producto int,
+	@id_producto int
+)
+AS
+	SET NOCOUNT OFF;
+UPDATE [Produccion].[Productos] SET [nombre_producto] = @nombre_producto, [id_categoria] = @id_categoria, [precio_unitario] = @precio_unitario, [detalles] = @detalles WHERE (([id_producto] = @Original_id_producto));
+	
+SELECT id_producto, nombre_producto, id_categoria, precio_unitario, detalles, codigo FROM Produccion.Productos WHERE (id_producto = @id_producto)
+GO
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_EliminarProductos' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_EliminarProductos
+GO
+
+CREATE PROCEDURE [dbo].STP_EliminarProductos
+(
+	@Original_id_producto int
+)
+AS
+	SET NOCOUNT OFF;
+DELETE FROM [Produccion].[Productos] WHERE (([id_producto] = @Original_id_producto))
+GO
+
+--
+
+IF EXISTS (SELECT * FROM sysobjects WHERE name = 'STP_MostrarProductosID' AND user_name(uid) = 'dbo')
+	DROP PROCEDURE [dbo].STP_MostrarProductosID
+GO
+
+CREATE PROCEDURE [dbo].STP_MostrarProductosID
+(
+	@ID int
+)
+AS
+	SET NOCOUNT ON;
+SELECT        id_producto, nombre_producto, id_categoria, precio_unitario, codigo, detalles
+FROM            Produccion.Productos
+WHERE        (id_producto = @ID)
+GO
+
+--
+
