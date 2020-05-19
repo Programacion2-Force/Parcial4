@@ -68,3 +68,39 @@ C:\Users\Josué Castillo\Desktop\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_
 C:\Users\Josué Castillo\Desktop\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.csproj.CopyComplete
 C:\Users\Josué Castillo\Desktop\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.dll
 C:\Users\Josué Castillo\Desktop\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.pdb
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\Trantanelli_SRL.dll.config
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\Trantanelli_SRL.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\Trantanelli_SRL.pdb
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\csc.exe
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\csc.exe.config
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\csc.rsp
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\csi.exe
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\csi.rsp
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\System.AppContext.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\vbc.exe
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\vbc.exe.config
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\vbc.rsp
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\VBCSCompiler.exe
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.csprojAssemblyReference.cache
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.csproj.CoreCompileInputs.cache
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.csproj.CopyComplete
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.dll
+C:\Users\Irving\Documents\GitHub\Proyecto-Unit4\Parcial4\Trantanelli_SRL\obj\Debug\Trantanelli_SRL.pdb
